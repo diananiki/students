@@ -1,0 +1,196 @@
+body {
+    font-family: Andale Mono, monospace;
+    background-color: #e8eaee;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin-top: 20px;
+}
+
+#id {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#add {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 0 80px;
+}
+#add:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+table th {
+    background-color: #f2f2f2;
+}
+
+#link {
+    color: black;
+    text-decoration: none;
+}
+#link:hover {
+    text-decoration: underline;
+}
+
+#add_student {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#add_student form label {
+    display: block;
+    margin-bottom: 5px;
+}
+#add_student form input {
+    width: 95%;
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+
+input {
+    font-size: 16px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn_add {
+    margin: 5px 0;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn_add:hover {
+    background-color: #45a049;
+}
+
+.btn_del {
+    margin: 5px 0;
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn_del:hover {
+    background-color: #e53935;
+}
+
+#add_subject {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#list_sbj {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#list_sbj h4 {
+    margin: 10px 0;
+}
+
+select {
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+#main {
+    font-size: 20px;
+}
+
+#btn_update {
+    margin: 5px 0;
+    background-color: #2196F3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#btn_update:hover {
+    background-color: #1976D2;
+}
+
+.btn-back {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    background-color: #202a3f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-back:hover {
+    background-color: #171e2d;
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #a2acc2;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}

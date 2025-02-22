@@ -1,0 +1,26 @@
+<?php
+include '../database/db_connect.php';
+
+$student_id = $_POST["student_id"];
+$subject_ids = $_POST["subject_id"];
+
+foreach ($subject_ids as $index => $subject_id) {
+    $rgz_status = isset($_POST["rgz_passed"][$index]) ? (int)$_POST["rgz_passed"][$index] : 0;
+    $control_status = isset($_POST["test_passed"][$index]) ? (int)$_POST["test_passed"][$index] : 0;
+    $credit_status = isset($_POST["exam_passed"][$index]) ? (int)$_POST["exam_passed"][$index] : 0;
+    $exam_status = isset($_POST["exam_passed"][$index]) ? (int)$_POST["exam_passed"][$index] : 0;
+
+    // Проверяем, сдал ли студент предмет
+    $exam_grade = ($rgz_status && $control_status && $credit_status && $exam_status) ? 1 : 0;
+
+    $sql = "UPDATE subjects 
+            SET rgz_status=$rgz_status, control_status=$control_status, 
+                credit_status=$credit_status, exam_status=$exam_status, 
+                exam_grade=$exam_grade
+            WHERE id=$subject_id";
+
+    $conn->query($sql);
+}
+
+header("Location: student_page.php?id=$student_id");
+?>
